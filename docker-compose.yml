@@ -6,15 +6,10 @@
       image: postgres:latest
       restart: always
       ports:
-        - 8000:8080
+        - '5432:5432'
       volumes:
         - ./data:/var/lib/postgres
       environment:
-          POSTGRES_USER: app
+          POSTGRES_DATABASE: firstBase
+          POSTGRES_USER: anton
           POSTGRES_PASSWORD: anton12345
-
-    adminer:
-      image: adminer
-      restart: always
-      ports:
-        - 8080:8080
