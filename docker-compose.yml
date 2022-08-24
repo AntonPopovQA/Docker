@@ -10,6 +10,6 @@
       volumes:
         - ./data:/var/lib/postgres
       environment:
-          POSTGRES_DATABASE: firstBase
+          POSTGRES_DATABASE: anton
           POSTGRES_USER: anton
           POSTGRES_PASSWORD: anton12345
